@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<title>cart</title>
+		
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+			<link href="style.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-nav">
+			<div class="container">
+			  <a class="navbar-brand" href="#">Canteen</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav ml-auto">
+				  <li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(Home)</span></a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Categories</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Products</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Dropdown link
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					  <a class="dropdown-item" href="#">Action</a>
+					  <a class="dropdown-item" href="#">Another action</a>
+					  <a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		</nav>		
+		
+		<div class="container">
+			
+			<div class="block-element my-4">
+				<a class="btn btn-info" href="#">&larr; Continue Shopping</a>
+				<br/>
+				<br/>
+				<table class="table">
+					<tr>
+						<th><h5>Items: <strong>5</strong></h5></th>
+						<th><h5>Price: <strong>Rs 5000</strong></h5></th>
+						<th><a class="btn btn-success float-right mr-1" href="#">Checkout</a></th>
+					</tr>
+				</table>
+			</div>
+		
+			<div class="block-element my-4">
+				<div class="cart-row mb-2 pb-2">
+					<div style="flex:2"></div>
+					<div style="flex:2"><strong>Items</strong></div>
+					<div style="flex:1"><strong>Price</strong></div>
+					<div style="flex:1"><strong>Quantity</strong></div>
+					<div style="flex:1"><strong>Total</strong></div>
+				</div>
+				<hr/>
+				<div class="cart-row">
+					<div style="flex:2"><img class="row-img" src="images/home.jpg"/></div>
+					<div style="flex:2">First Class Item</div>
+					<div style="flex:1">Rs <span class="price">5000</span></div>
+					<div style="flex:1">
+						<p class="quantity">1</p>
+						<div class="quantity">
+							<img class="chg-quantity" src="images/arrow-up.svg" alt=""/>
+							<img class="chg-quantity" src="images/arrow-down.svg" alt=""/>
+						</div>
+					</div>
+					<div style="flex:1">Rs <span class="price">5000</span></div>
+				</div>
+			</div>			
+			
+		</div>
+
+		
+	</body>
+</html>

@@ -1,0 +1,26 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+	<h2 class="mt-2">Store</h2>
+
+	<div class="row">
+		{% for product in products %}
+		<div class="col-lg-4 col-md-6 col-sm-12 my-2">
+			<div class="card product-board">
+				<!--<img class="card-img-top" src="images/home.jpg" alt="image-size">-->
+				<div class="product-list-img" style="background-image: url('{{ product.imageURL }}')"></div>
+				<div class="card-body p-3">
+					<h4 class="card-title mb-1">{{ product.name }}</h4>
+					<p class="text-body mb-1">We will love to be contacted by you. Please continue </p>
+					<h5 class="mb-2">Rs <span>{{ product.price }}</span></h5>
+					<!--<a class="btn btn-primary w-100 add-btn" href="#">Add to cart</a>-->
+					<button data-product={{ product.id }} data-action="add" class="btn btn-primary w-100 add-btn update-cart">Add to Cart</button>
+				</div>
+			</div>
+		</div>
+		{% endfor %}				
+	</div>
+	<br/>
+
+{% endblock content %}
